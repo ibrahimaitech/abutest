@@ -31,36 +31,48 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-╭────《LADIESMAN-MD》────☣
-☯ *User* : ${s.OWNER_NAME}
-☪ *Mode* : ${mode}
-☮ *Commands* : ${cm.length} 
-☯ *Time* : ${temps} 
-☪ *Ram* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-☮ LADIESMAN-MD
-╰─────✨✨✨✨✨─────☣ \n\n`;
+┏━━━━━━༻❁༺━━━━━━━✾
+┇    ┏━✦❘༻༺❘✦━━┓
+┇        𝑩𝑴𝑾-𝑿𝑴𝑫
+┇    ┗━✦❘༻༺❘✦━━┛
+┗━━━━━━༻❁༺━━━━━━━✾
+╔═══✿═══════════✿══✾
+┇     𝑶𝑾𝑵𝑬𝑹 𝑴𝑬𝑵𝑼
+┇💮┇ *User* : ${s.OWNER_NAME}
+┇💮┇ *Mode* : ${mode}
+┇💮┇ *Commands* : ${cm.length} 
+┇💮┇ *Time* : ${temps} 
+┇💮┇ *Ram* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+╚══❖══════════════❖═✾
+┏━━━━━❂━━━━❂━━━━━┓
+┇     𝑫𝑬𝑽𝑬𝑳𝑶𝑷𝑬𝑹
+┇   𝑰𝑩𝑹𝑨𝑯𝑰𝑴 𝑨𝑫𝑨𝑴𝑺
+┗━━━━━❂━━━━❂━━━━━┛
+┗━━━━━༻❁༺━━━━━━━━✾ \n\n`;
  
     let menuMsg=`  
-  ┆┆┆┆┆┆┆┆┆┆┆┆┆┆┆┆┆┆┆┆┆┆
-✨➽➽➽➽➽➽➽➽➽➽➽➽➽➽➽↰✨
-`;
+  ╔══❖═══════════════❖══╗
+    ❄||||𝑩𝑴𝑾-𝑴𝑫 𝑿5||||❄
+  ╚══❖═══════════════❖══╝`;
 
     for (const cat in coms) {
-        menuMsg += `*╭────☣* *${cat}* *☣⊷*`;
+        menuMsg += `*╭───〘* *${cat}* *〙*`;
         for (const cmd of coms[cat]) {
             menuMsg += `  
-*⬆☬* ${cmd}`;
+*┇💮┇* ${cmd}`;
         }
         menuMsg += `
-*↪═════════════☣* \n`
+*┗━━━━━༻❁༺━━━━━━━✾* \n`
     }
 
     menuMsg += `
-◇            ◇
-*————— ✨ —————*
 
-  *LADIESMAN-MD*                                         
-*↪═════════════☣*
+🎼ılılıll |̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅| llılılı🎼
+
+  *┏━━━━━❂❂━━━━━┓
+     𝑩𝑴𝑾 𝑿5 𝑾𝑨𝑩𝑶𝑻
+   ┗━━━━━❂❂━━━━━┛*                                         
+*┗━━━━━━━༻❁༺━━━━━━━━*
 `;
 
    var lien = mybotpic();
